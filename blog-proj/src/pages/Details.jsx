@@ -16,7 +16,6 @@ import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Container from "@material-ui/core/Container";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
@@ -24,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
   },
   root: {
     maxWidth: "80%",
-
     flexDirection: "column",
     border: "1px solid red",
   },
@@ -53,15 +51,12 @@ const useStyles = makeStyles((theme) => ({
     border: "2px solid yellow",
   },
 }));
-
 export default function Details() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
   return (
     <Container className={classes.container}>
       <Card className={classes.root}>
@@ -70,7 +65,6 @@ export default function Details() {
           image="https://www.hyundai.com/content/hyundai/ww/data/news/data/2021/0000016609/image/newsroom-0112-photo-1-2021elantranline-1120x745.jpg"
           title="Paella dish"
         />
-
         <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
             This impressive paella is a perfect party dish and a fun meal to
@@ -83,7 +77,6 @@ export default function Details() {
           avatar={
             <AccountCircleIcon/>
           }
-        
           title="Shrimp and Chorizo Paella"
           subheader="September 14, 2016"
         />
@@ -128,7 +121,7 @@ export default function Details() {
               is absorbed, 15 to 18 minutes. Reduce heat to medium-low, add
               reserved shrimp and mussels, tucking them down into the rice, and
               cook again without stirring, until mussels have opened and rice is
-              just tender, 5 to 7 minutes more. (Discard any mussels that don’t
+              just tender, 5 to 7 minutes more. (Discard any mussels that don't
               open.)
             </Typography>
             <Typography>
